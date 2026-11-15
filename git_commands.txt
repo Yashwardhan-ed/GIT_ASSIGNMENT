@@ -1,0 +1,35 @@
+1. mkdir git-assignment-project && cd git-assignment-project
+Creates a new local project directory and navigates the terminal session into it.
+
+2. git init -b main
+Initializes a new local Git repository in the current directory with 'main' as the default branch.
+
+3. git add <file / .>
+Stages modified or newly created files in the working directory so they are ready to be committed.
+
+4. git commit -m "message"
+Records a permanent snapshot of the staged changes in the repository's version history with a descriptive message.
+
+5. git branch feature
+Creates a new parallel line of development (branch) named 'feature' pointing to the current commit.
+
+6. git checkout feature / git checkout main
+Switches the active working directory and HEAD pointer between the 'feature' and 'main' branches.
+
+7. git merge feature
+Integrates the commit history and file changes from the 'feature' branch into the currently active 'main' branch.
+
+8. git log --oneline --graph --all
+Displays a compact, visual commit history tree showing all commits, branches, and merge points.
+
+9. git status
+Displays the current state of the working directory and staging area, confirming ignored files are excluded.
+
+10. git reset --hard HEAD~1
+Undoes the most recent commit by moving the HEAD pointer back one commit and discarding the changes from the working tree.
+
+11. git remote add origin <URL>
+Links the local Git repository to a remote repository hosted on GitHub under the alias 'origin'.
+
+12. git push -u origin main
+Uploads all local commits and branch history from the 'main' branch to the remote GitHub repository.
